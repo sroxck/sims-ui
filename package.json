@@ -1,7 +1,9 @@
 {
   "name": "sroxck-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main":"dist/sroxck-ui.umd.min.js",
+  "author": "Sroxck",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

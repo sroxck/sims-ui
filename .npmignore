@@ -1,0 +1,9 @@
+# 忽略目录
+packages/
+examples/
+public/
+
+# 忽略配置
+vue.config.js
+babel.config.js
+*.map
