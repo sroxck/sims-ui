@@ -8,7 +8,7 @@
       </template>
     </sr-dialog>
     <sr-button @click="visible=true">显示</sr-button>
-    <sr-button type="primary">显示2</sr-button>
+    <sr-button type="primary" @click="$message('测试')">显示2</sr-button>
   </div>
 </template>
 

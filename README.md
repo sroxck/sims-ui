@@ -27,7 +27,7 @@ Sui 参照了Element UI、Ant Design等常见的UI框架，实现了一些常用
 - [x] Button 按钮
 - [x] Dialog 对话框
 <!-- - [x] Input 输入框 -->
-<!-- - [x] Toast 消息提示 -->
+- [x] Notify 消息提示
 <!-- - [x] Tabs 切换 -->
 <!-- - [x] Collapse 折叠面板 -->
 <!-- - [x] Lattice 栅格 -->

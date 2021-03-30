@@ -1,6 +1,6 @@
 {
   "name": "sroxck-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main":"dist/sroxck-ui.umd.min.js",
   "author": "Sroxck",
