@@ -1,10 +1,10 @@
 import Button from './button'
 import Dialog from './dialog'
 import message from './message.js'
-import Message from './message.vue'
+// import Message from './message.vue'
 
 import './icon/iconfont.css'
-const componentList = [Button,Dialog,Message]
+const componentList = [Button,Dialog]
 const install = function (vue){
     componentList.forEach(item=>{
         vue.component(item.name,item)

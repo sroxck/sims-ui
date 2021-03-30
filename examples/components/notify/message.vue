@@ -12,7 +12,6 @@
       </div>
       
 </div>
-  
 </template>
 
 <script>
@@ -32,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 
 .sr-message{
-     top: 16px;
+     top: 10px;
      right: 0;
     z-index: 2031;
     animation: mess .4s;
@@ -67,10 +66,29 @@ export default {
 }
 @keyframes mess {
     0%{
+        top:-10px;
         opacity: 0;
     }
     100%{
+        top:10px;
         opacity: 1;
     }
+}
+// 动画效果
+.message-fade-enter-active {
+  animation: fade 0.2s;
+}
+.message-fade-leave-active {
+  animation: fade 0.2s reverse;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+    // transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    // transform: translateY(0);
+  }
 }
 </style>

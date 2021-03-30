@@ -4,6 +4,7 @@
     :disabled="disabled"
     :class="[
       `sr-button-${type}`,
+      `sr-button--${size}`,
       {
         'is-plain': plain,
         'is-round': round,
@@ -23,7 +24,7 @@
 
 <script>
 export default {
-    name: "SrButton",
+    name: 'sr-button',
   props: {
     type: {
       type: String,
@@ -48,7 +49,9 @@ export default {
     disabled:{
        type: Boolean,
        default: false,
-    }
+    },
+     // 按钮大小
+    size:{ default: 'defaultSize'}
   },
   created() {},
   methods: {
@@ -60,6 +63,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/* 不同大小按钮的样式 */
+// 默认按钮
+.sr-button--defaultSize {
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+// 中等按钮
+.sr-button--medium {
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+// 小型按钮
+.sr-button--small {
+  font-size: 12px;
+  padding: 9px 15px;
+  border-radius: 3px;
+}
+// 迷你按钮
+.sr-button--mini {
+  font-size: 12px;
+  padding: 7px 15px;
+  border-radius: 3px;
+}
 .sr-button {
   display: inline-block;
   line-height: 1;
@@ -89,6 +117,11 @@ export default {
     border-color: #c6e2ff;
     background-color: #ecf5ff;
   }
+  &:active {
+    color: #3a8ee6;
+    border-color: #3a8ee6;
+    outline: none;
+  }
 }
 .sr-button-primary {
   color: #fff;
@@ -98,6 +131,11 @@ export default {
   &:focus {
     background: #66b1ff;
     background-color: #66b1ff;
+    color: #fff;
+  }
+  &:active {
+    background: #3a8ee6;
+    border-color: #3a8ee6;
     color: #fff;
   }
 }
@@ -111,6 +149,11 @@ export default {
     background-color: #85ce61;
     color: #fff;
   }
+  &:active {
+    background: #5daf34;
+    border-color: #5daf34;
+    color: #fff;
+  }
 }
 .sr-button-info {
   color: #fff;
@@ -120,6 +163,11 @@ export default {
   &:focus {
     background: #a6a9ad;
     background-color: #a6a9ad;
+    color: #fff;
+  }
+  &:active{
+    background: #82848a;
+    border-color: #82848a;
     color: #fff;
   }
 }
@@ -133,6 +181,11 @@ export default {
     background-color: #ebb563;
     color: #fff;
   }
+  &:active {
+    background: #cf9236;
+    border-color: #cf9236;
+    color: #fff;
+  }
 }
 .sr-button-danger {
   color: #fff;
@@ -142,6 +195,11 @@ export default {
   &:focus {
     background: #f78989;
     background-color: #f78989;
+    color: #fff;
+  }
+  &:active {
+    background: #dd6161;
+    border-color: #dd6161;
     color: #fff;
   }
 }

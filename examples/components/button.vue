@@ -100,6 +100,11 @@ export default {
     background-color: #66b1ff;
     color: #fff;
   }
+  &:active {
+    background: #3a8ee6;
+    border-color: #3a8ee6;
+    color: #fff;
+  }
 }
 .sr-button-success {
   color: #fff;
@@ -109,6 +114,11 @@ export default {
   &:focus {
     background: #85ce61;
     background-color: #85ce61;
+    color: #fff;
+  }
+  &:active {
+    background: #5daf34;
+    border-color: #5daf34;
     color: #fff;
   }
 }
@@ -122,6 +132,7 @@ export default {
     background-color: #a6a9ad;
     color: #fff;
   }
+  
 }
 .sr-button-warning {
   color: #fff;
@@ -133,6 +144,11 @@ export default {
     background-color: #ebb563;
     color: #fff;
   }
+  &:active {
+    background: #cf9236;
+    border-color: #cf9236;
+    color: #fff;
+  }
 }
 .sr-button-danger {
   color: #fff;
@@ -142,6 +158,11 @@ export default {
   &:focus {
     background: #f78989;
     background-color: #f78989;
+    color: #fff;
+  }
+  &:active {
+    background: #dd6161;
+    border-color: #dd6161;
     color: #fff;
   }
 }
