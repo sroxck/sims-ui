@@ -22,6 +22,7 @@
   </button>
 </template>
 
+
 <script>
 export default {
     name: 'sr-button',
@@ -63,31 +64,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* 不同大小按钮的样式 */
-// 默认按钮
-.sr-button--defaultSize {
-  font-size: 14px;
-  padding: 12px 20px;
-  border-radius: 5px;
-}
-// 中等按钮
-.sr-button--medium {
-  font-size: 14px;
-  padding: 10px 20px;
-  border-radius: 4px;
-}
-// 小型按钮
-.sr-button--small {
-  font-size: 12px;
-  padding: 9px 15px;
-  border-radius: 3px;
-}
-// 迷你按钮
-.sr-button--mini {
-  font-size: 12px;
-  padding: 7px 15px;
-  border-radius: 3px;
-}
+// 按钮大小样式说明
+// 按钮尺寸:    default (默认)        medium (中等)         small (小型)         mini (迷你)
+// 字体大小:    default (14px)       medium (14px)         small (12px)        mini (12px)
+// 边距大小:    default (12px 20px)  medium (10px 20px)    small (9px 15px)    mini (7px 15px)
+// 圆角大小:    default (5px)        medium (4px)          small (3px)         mini (3px)
+
+// 按钮类型样式说明
+// 按钮类型:    default (默认)        primary (主要)            success (成功)          warning (警告)           danger (危险)
+// 字体颜色:    default (#606266)    primary (#fff)           success (#fff)          warning (#fff)          danger (#fff)
+// 背景颜色:    default (#fff)       primary (#409eff)        success (#67c23a)       warning (#e6a23c)       danger (#f56c6c)
+// 边框颜色:    default (#dcdfe6)    primary (#409eff)        success (#67c23a)       warning (#e6a23c)       danger (#f56c6c)
+
 .sr-button {
   display: inline-block;
   line-height: 1;
@@ -283,5 +271,30 @@ export default {
   background-image: none;
   background-color: #fff;
   border-color: #ebeef5;
+}
+/* 不同大小按钮的样式 */
+// 默认按钮
+.sr-button--defaultSize {
+  font-size: 14px !important;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
+// 中等按钮
+.sr-button--medium {
+  font-size: 14px !important;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+// 小型按钮
+.sr-button--small {
+  font-size: 12px !important;
+  padding: 9px 15px;
+  border-radius: 3px;
+}
+// 迷你按钮
+.sr-button--mini {
+  font-size: 12px !important;
+  padding: 7px 15px;
+  border-radius: 3px;
 }
 </style>

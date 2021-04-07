@@ -11,6 +11,7 @@
     <sr-button @click="$message('按钮被点击了')" type="warning">警告按钮</sr-button>
     <sr-button @click="$message('按钮被点击了')" type="success">成功按钮</sr-button>
     <hr>
+    
     <h2>朴素按钮: 提供plain参数,布尔值,默认false</h2>
     <sr-button plain @click="$message('按钮被点击了')" type="">普通按钮</sr-button>
     <sr-button plain @click="$message('按钮被点击了')" type="primary">主要按钮</sr-button>

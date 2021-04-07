@@ -13,6 +13,7 @@
         </div>
         <div class="sr-dialog_body">
           <slot></slot>
+          
         </div>
         <div class="sr-dialog_footer" v-if="$slots.footer">
           <slot name="footer">
