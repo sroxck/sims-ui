@@ -6,7 +6,7 @@
         <div class="sr-dialog_header">
           <slot name="title">
             <span class="sr-dialog_title">{{ title }}</span>
-          </slot>
+          </slot>  
           <button class="sr-dialog_headerbtn" @click="handleClose">
             <i class="s-icon-close" ></i>
           </button>

@@ -42,7 +42,7 @@ export default {
     circle: {
       type: Boolean,
       default: false,
-    },
+    },   
     icon: {
       type: String,
       default: "",
