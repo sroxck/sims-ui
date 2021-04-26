@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+
 import Sui from '../packages'
 
 import './assets/icon/iconfont.css'
