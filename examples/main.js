@@ -14,7 +14,6 @@ console.log(ast.parseAST(`<div id="app">
 <button @click="handle">按钮</button>
 </div>`));
 Vue.config.productionTip = false
-
 // import message from './components/notify/index.js'
 // Vue.use(message)
 Vue.use(Sui)
