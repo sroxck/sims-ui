@@ -5,6 +5,7 @@ import Sui from '../packages'
 
 import './assets/icon/iconfont.css'
 import ast from 'trans-ast'
+
 console.log(ast.parseAST(`<div id="app">
 <p>**{{message.trim()}}**</p>
 <p s-text="message"></p>
