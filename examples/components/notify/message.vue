@@ -12,6 +12,7 @@
       </div>
       
 </div>
+  
 </template>
 
 <script>
@@ -24,6 +25,13 @@ export default {
             message:"测试测试",
             isLife:false
         }
+    },
+    methods:{
+        close() {
+            this.$el.remove()
+            this.$emit('close')
+            this.$destroy()
+        },
     }
 }
 </script>
@@ -31,7 +39,7 @@ export default {
 <style lang="scss" scoped>
 
 .sr-message{
-     top: 10px;
+     top: 16px;
      right: 0;
     z-index: 2031;
     animation: mess .4s;
@@ -66,29 +74,16 @@ export default {
 }
 @keyframes mess {
     0%{
-        top:-10px;
         opacity: 0;
+        transform: translateY(-100%);
     }
     100%{
-        top:10px;
         opacity: 1;
+        transform: translateY(0);
+
     }
 }
-// 动画效果
-.message-fade-enter-active {
-  animation: fade 0.2s;
-}
-.message-fade-leave-active {
-  animation: fade 0.2s reverse;
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-    // transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    // transform: translateY(0);
-  }
+p{
+    margin: 0;
 }
 </style>

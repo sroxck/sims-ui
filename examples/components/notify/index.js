@@ -5,6 +5,7 @@ const mesObj = vue.extend(message)
 function show(context,title="提示",time=3000,){
     // 实例化一个 CustToast.vue
     const _message = new mesObj({
+        name:'message',
         data(){
             return {
                 message:context,
@@ -22,8 +23,21 @@ function show(context,title="提示",time=3000,){
     }, time);
 
 }
+show.success = function(context,title="提示",time=3000,){
+     show(context,title="提示",time=3000,)
+}
+show.danger = function(context,title="提示",time=3000,){
+    show(context,title="提示",time=3000,)
+}
+show.info = function(context,title="提示",time=3000,){
+    show(context,title="提示",time=3000,)
+}
+show.warning = function(context,title="提示",time=3000,){
+    show(context,title="提示",time=3000,)
+}
 // 需要在main.js 里面使用 Vue.use(showToast);
 show.install = (Vue) => {
+    console.log(show);
     // 将组件注册到 vue 的 原型链里去,
     // 这样就可以在所有 vue 的实例里面使用 this.$toast()
     Vue.prototype.$message = show

@@ -3,7 +3,7 @@
     class="sr-button"
     :disabled="disabled"
     :class="[
-      `sr-button-${type}`,
+      `sr-button-${type || 'default'}`,
       {
         'is-plain': plain,
         'is-round': round,
