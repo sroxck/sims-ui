@@ -24,7 +24,7 @@ export default {
     }
 }
 </script>
-<style >
+<style scoped>
 .divider{
     background: #dcdfe6;
     position: relative;
