@@ -17,10 +17,12 @@ Vue.use(message)
 import btn from './components/button.vue'
 import dialog from './components/dialog.vue'
 import link from './components/link.vue'
+import divider from './components/divider.vue'
 
 Vue.component('sr-button',btn)
 Vue.component('sr-link',link)
 Vue.component('sr-dialog',dialog)
+Vue.component('sr-divider',divider)
 new Vue({
   render: h => h(App),
 }).$mount('#app')
